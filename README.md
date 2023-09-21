@@ -1,5 +1,5 @@
 # Slitheri
-Just a simple snake game
+Just a simple snake game. I used svelte cause idk why don't ask me.
 
 # Requirements
 - pnpm OR npm OR yarn
