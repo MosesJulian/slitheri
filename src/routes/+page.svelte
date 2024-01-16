@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-  // import PlayAgain from '@src/components/PlayAgain.svelte';
 
   type Coordinate = {
     x: number;
@@ -162,14 +161,13 @@ onMount(() => {
     <canvas bind:this={canvas} width="600" height="600"></canvas>
 
     {#if isDialogOpen}
-      <!-- <PlayAgain score={score} playAgain={() => location.reload()} /> -->
       <div class="absolute top-0 bottom-0 left-0 right-0 z-10 grid place-items-center bg-[rgba(0,0,0,0.5)]">
         <div class="shadow bg-white p-4 rounded flex flex-col gap-2 justify-center">
           <div class="text-xl flex justify-between items-center px-4">
             <h2>Game Over</h2>
           </div>
           <hr />
-          <h4 class="text-lg">Your Score is: {score}!</h4>
+          <h4 class="text-lg">Your Score is: {score}</h4>
           <button class="text-white px-4 py-2 rounded bg-slate-500 duration-300 transition-colors hover:bg-slate-700" on:click={() => location.reload()}>Play Again</button>
         </div>
       </div>
